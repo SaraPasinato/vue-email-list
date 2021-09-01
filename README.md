@@ -6,7 +6,7 @@
 ---
 <br>
 
-![Screenshoot](sreenshot.png)
+![Screenshoot](./img/sreenshot.png)
 
 <br>
 
