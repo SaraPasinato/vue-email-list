@@ -22,7 +22,14 @@ var app = new Vue({
     getEmail(){
       axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((res)=>{
         this.emailLists.push(res.data.response);
-      });
+      }) .catch((error) => {
+        // stampa error in console
+        console.log(error);
+      })
+      .then(() => {
+       // stampa in ogni caso questa sezione!
+       console.log('Termine funzione getEmail')
+      });;
     }
   },
   created(){
